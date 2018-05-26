@@ -1,3 +1,5 @@
+package parser;
+
 public class BaseOperatorToken extends Token{
 
     public static final int IMPORTANCE = 1;

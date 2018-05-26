@@ -22,3 +22,6 @@ test:
 
 jar: compile
 	gradle shadowJar
+
+run:
+	java -cp build/libs/parser-all.jar parser.Main

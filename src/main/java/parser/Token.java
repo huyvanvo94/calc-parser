@@ -1,3 +1,5 @@
+package parser;
+
 public abstract class Token {
 
     private String value;

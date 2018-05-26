@@ -1,3 +1,5 @@
+package parser;
+
 public class SecondLevelOperatorToken extends BaseOperatorToken{
 
     public final static int IMPORTANCE = 2;
