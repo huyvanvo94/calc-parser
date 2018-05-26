@@ -23,20 +23,26 @@ public class CalcParser {
         parse(expression);
     }
 
+    public Queue<Token> getTokenList() {
+        return tokenList;
+    }
+
     public void parse(String expression){
         tokenList = new LinkedList<>();
         StringBuilder stringBuilder = new StringBuilder();
 
         for(char c: expression.toCharArray()){
+
             if(!Character.isDigit(c)){
-                if(stringBuilder.length() != 0){
+
+                if (stringBuilder.length() != 0) {
 
                     add(stringBuilder.toString());
                     stringBuilder = new StringBuilder();
-
                 }
 
                 add(String.valueOf(c));
+
 
             }else{
                 stringBuilder.append(String.valueOf(c));
